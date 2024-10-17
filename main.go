@@ -11,7 +11,7 @@ import (
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
 )
 
-const OpenWeatherMapAPIKey = "0e264e7da407afac79c77c3f2d1feeeb"
+const OpenWeatherMapAPIKey = "TokenID"
 
 // Creating a struct
 type WeatherMapApiResponse struct {
