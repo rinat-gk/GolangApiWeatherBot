@@ -11,7 +11,7 @@ import (
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
 )
 
-const OpenWeatherMapAPIKey = "0e264e7da407afac79c77c3f2d1feeeb"
+const OpenWeatherMapAPIKey = "WeatherAPITokenID"
 
 // Creating a struct
 type WeatherMapApiResponse struct {
@@ -47,6 +47,10 @@ func getWeather(city string) (string, error) {
 
 func main() {
 
+	err := godotenv.Load()
+	if err != nil {
+		log.Fatalf("Error loading .env file")
+	}
 	// Insert Telegram Bot Token
 	const TELEGRAM_BOT_TOKEN = "TelegramTokenID"
 
