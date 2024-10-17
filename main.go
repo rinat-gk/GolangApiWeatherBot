@@ -48,8 +48,9 @@ func getWeather(city string) (string, error) {
 func main() {
 
 	// Insert Telegram Bot Token
+	TELEGRAM_BOT_TOKEN := "7850205681:AAG_tWa2WJg8j1e-FMGrxrizp_QKTIv6JI28"
 
-	telegramToken := os.Getenv("7850205681:AAG_tWa2WJg8j1e-FMGrxrizp_QKTIv6JI28")
+	telegramToken := os.Getenv(TELEGRAM_BOT_TOKEN)
 	if telegramToken == "" {
 		log.Fatal("TelegramBotToken is not set")
 	}
